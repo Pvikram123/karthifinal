@@ -1,0 +1,25 @@
+const express=require("express")
+const router =express.Router()
+const jwt_auth=require('../auth/authvadalation')
+const register=require("../auth/authreg.js")
+const login = require("../auth/authlog")
+const userlogout= require("../auth/authlogout")
+const delete_user=require("../controllers/delete")
+const {get,getid,getname,getdate} = require("../controllers/controlfind")
+ const loginfn = require("../auth/front/login")
+const registerfn=require("../auth/front/register")
+const home=require("../auth/front/homepage")
+const logout=require('../auth/front/logout')
+
+router.post("/reg",register)
+router.post("/log",login)
+router.get("/out",userlogout)
+router.delete('/del/',jwt_auth,delete_user)
+router.get('/getall',get);
+router.get('/get',getname)
+router.get('/logfn',loginfn)
+router.get('/register',registerfn)
+router.get('/home',home)
+router.get('/logoutfn',logout)
+
+module.exports=router

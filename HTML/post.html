@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+    #a2 {
+        text-align: center;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #a2 a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    #a1 {
+        width: 30%;
+        margin: 5% 15%;
+        padding: 20px 5%;
+        background: transparent;
+        /* background-color: rgba(255, 255, 255, 0.8); */
+        border-radius: 5px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    }
+    .l1 {
+        font-size: 24px;
+    }
+    /* .i1 {
+        padding: 0px;
+        width: auto;
+    } */
+    #b2 {
+        /* background: rgb(229, 225, 225); */
+
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+    #b2 label {
+        display: block;
+    }
+    #b2 input[type="text"] {
+        width: 70%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        /* border-radius: 5px; */
+    }
+    #b2 input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #b2 input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    @media screen and (max-width: 768px) {
+        #a1 {
+            width: 50%;
+        }
+    }
+</style>
+</head>
+<body>
+<div id="a2">
+    <a href="http://localhost:5000/try/logfn">SIGNIN</a>
+    <a href="http://localhost:5000/exe/finefn">FIND</a>
+    <a href="http://localhost:5000/exe/updatefn">UPDATE</a>
+    <a href="http://localhost:5000/try/logoutfn">LOGOUT</a>
+</div>
+<div id="a1">
+    <form id="b2" action="http://localhost:5000/exe/post" method="POST">
+        <label class="l1" for="name">Name:</label>
+        <input class="i1" type="text" id="name" name="name" autofocus />
+        
+        <label class="l1" for="id">id:</label>
+        <input class="i1" type="text" id="id" name="id" />
+        
+        <label class="l1" for="product">Product:</label>
+        <input class="i1" type="text" id="product" name="product" />
+        
+        <label class="l1" for="item">Item:</label>
+        <input class="i1" type="text" id="item" name="item" />
+        
+        <label class="l1" for="quantity">Quantity:</label>
+        <input class="i1" type="text" id="quantity" name="quantity" />
+        
+        <label class="l1" for="price">Price:</label>
+        <input class="i1" type="text" id="price" name="price" />
+        
+        <input style="width: 50%;margin-top: 3%;margin-left: 7%;" type="submit" value="ADD" />
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+     body {
+         background-image: url('https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80');
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin: 0;
+         font-family: Arial, sans-serif;
+     }
+     #a1 {
+        width: 400px;
+        margin: 15% 11% 0;
+        padding: 20px;
+        background-color: rgb(255, 247, 247);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+     #b2 {
+         text-align: center;
+         padding: 0;
+     }
+     .l1 {
+         font-size: 24px;
+     }
+     .i1 {
+         padding: 5px;
+     }
+     #a2 {
+        background-color: antiquewhite;
+        font-size: 2vw;
+        text-align: center;
+        margin-top: 2%;
+    }
+    #a2 a {
+        
+        display: inline-block; /* Change display to inline-block */
+        margin: 5px;
+        color: rgba(19, 21, 25, 0.362);
+        text-decoration: none;
+        padding: 8px 10px; /* Add padding for better spacing */
+    }
+     /* Responsive adjustments */
+     @media screen and (max-width: 768px) {
+         #a1 {
+             width: 90%;
+             margin: 10% auto 0;
+         }
+     }
+ </style>
+ </head>
+ <body>
+ <div id="a2">
+     <a href="http://localhost:5000/exe/postfn">ADD ITEMS</a>
+     <a href="http://localhost:5000/exe/finefn">FIND</a>
+     <a href="http://localhost:5000/exe/updatefn">UPDATE</a>
+     <a href="http://localhost:5000/try/logoutfn">LOGOUT</a>
+ </div>
+ 
+ <div id="a1">
+     <form id="b2" action="http://localhost:5000/try/log" method="post">
+         <label class="l1" for="useremail">Email:</label><br>
+         <input class="i1" type="email" id="useremail" name="useremail" />
+         <br><br>
+         <label class="l1" for="userpassword">Password:</label><br>
+         <input class="i1" type="password" id="userpassword" name="userpassword" />
+         <br><br>
+         <input style="width: auto; font-size: large;" type="submit" value="Sign In" />
+         <button><a href="http://localhost:5000/try/register" style="display: block; width: 100%; text-decoration: none; font-size: large; color: black;">Sign Up</a></button>
+     </form>
+ </div>
+ </body>
+ </html>
+ 
