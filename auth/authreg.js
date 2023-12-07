@@ -7,10 +7,9 @@ const bcrypt = require("bcryptjs");
 const register = async (req, res) => {
   const { username, userpassword, useremail,userphno,dateofbirth } = req.body;
   const doesexist = await User.findOne({useremail: useremail});
-        if(doesexist){res.send("email already exist")
+        if(doesexist){res.send ("email already exist")
          return
         }
-
   const phnodoesexist = await User.findOne({userphno: userphno});
      if(phnodoesexist){res.send("phnumber already exist")
     return  
@@ -27,9 +26,9 @@ const register = async (req, res) => {
         date:new Date().toLocaleDateString('es-MX'),
       })
       .then((user) =>
-      res.sendFile("/home/vikram/Desktop/folder/git/karthi/HTML/log.html")
+      res.sendFile("C:/Users/DELL/karthifinal/HTML/log.html")
            )
-      
+
       .catch((error) =>
         res.status(400).json({
           message: "User not successful created",

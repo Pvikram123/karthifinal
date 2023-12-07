@@ -1,4 +1,4 @@
 const home = async (req, res) => {
-    res.sendFile("/home/vikram/Desktop/folder/git/karthi/HTML/homepage.html")
+    res.sendFile("C:/Users/DELL/karthifinal/HTML/homepage.html")
 }
 module.exports= home

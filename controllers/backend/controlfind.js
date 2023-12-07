@@ -1,13 +1,12 @@
 const { log } = require("console");
-const { find } = require("../model/auth_reg");
-const karthi=require("../model/data")
+const { find } = require("../../model/auth_reg");
+const karthi=require("../../model/data")
 const fs = require('fs').promises
 const path=require("path")
 
 exports.get=async(req,res)=>{
     try{
        const info=await karthi.find({},{"__v":0,});
-      
        a=``
 for (let i = 0; i < info.length; i++) {
     ids=`div${i}`
@@ -73,19 +72,15 @@ exports.getname=async(req,res)=>
               <p>price : ${data[i].price}</p>
        
                <p>date : ${data[i].date}</p> 
-      
-      
                </div>`
       }
              res.send(a)
-             return;
-        
+             return;   
     }   
     catch(err){
         res.status(500).json({"not complete":err.message});
     }
 }
-
 exports.getdate=async(req,res)=>
 {
     try{
@@ -105,8 +100,6 @@ exports.getdate=async(req,res)=>
               <p>price : ${data[i].price}</p>
        
                <p>date : ${data[i].date}</p> 
-      
-      
                </div>`
       }
              res.send(a)

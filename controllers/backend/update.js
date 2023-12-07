@@ -1,4 +1,4 @@
-const karthi=require("../model/data")
+const karthi=require("../../model/data")
 
 exports.put_user=async(req,res)=>{
     try{

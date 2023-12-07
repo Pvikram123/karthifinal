@@ -12,7 +12,6 @@ const userschema=new Mongoose.Schema({
         type:String,
         minlegth:8,
         require:true,
-        
     },
     userphno:{
         type:Number,

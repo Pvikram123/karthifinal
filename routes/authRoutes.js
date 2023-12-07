@@ -1,8 +1,8 @@
 const express=require("express")
 const authrouter =express.Router()
-const post_user=require("../controllers/controlpost")
-const find=require("../controllers/update")
-const {get,getid,getname,getdate} = require("../controllers/controlfind")
+const post_user=require("../controllers/backend/controlpost")
+const find=require("../controllers/backend/update")
+const {get,getid,getname,getdate} = require("../controllers/backend/controlfind")
 
 
 const postfn=require('../controllers/frontend/post')

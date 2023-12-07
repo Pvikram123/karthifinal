@@ -1,4 +1,4 @@
-const karthi=require("../model/data")
+const karthi=require("../../model/data")
 
 
 const post_user=async(req,res)=>{
@@ -15,7 +15,7 @@ const post_user=async(req,res)=>{
     try
     {
         const store_user = await data.save();
-        res.sendFile(`/home/vikram/Desktop/folder/git/karthi/HTML/findall.html`)
+        res.sendFile(`C:/Users/DELL/karthifinal/HTML/findall.html`)
     }
     catch(err){
         res.status(500).json({"not complete":err.message});

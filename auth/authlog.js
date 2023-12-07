@@ -21,12 +21,12 @@ if(req.body.useremail){
           expiresIn: "1h",
         }
       );
-  
+
       user.token = token;
       res                                                                                                                                                                                                                                                                             
       .status(200)
       .cookie("access_token", token)
-      .sendFile(`/home/vikram/Desktop/folder/git/karthi/HTML/post.html`)
+      .sendFile(`C:/Users/DELL/karthifinal/HTML/post.html`)
       return;
     }
     else{

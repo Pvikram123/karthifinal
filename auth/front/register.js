@@ -1,6 +1,5 @@
 const registerfn = async (req, res) => {
-    res.sendFile("/home/vikram/Desktop/folder/git/karthi/HTML/reg.html")
+    res.sendFile("C:/Users/DELL/karthifinal/HTML/reg.html")
 }
-
 
 module.exports= registerfn

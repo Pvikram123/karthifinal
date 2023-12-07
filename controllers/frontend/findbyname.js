@@ -1,4 +1,4 @@
 const findbynamefn = async (req, res) => {
-    res.sendFile("/home/vikram/Desktop/folder/git/karthi/HTML/findbyname.html")
+    res.sendFile("C:/Users/DELL/karthifinal/HTML/findbyname.html")
 }
 module.exports= findbynamefn

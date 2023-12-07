@@ -1,0 +1,12 @@
+<bookstore>
+  <book category="Fiction">
+    <title>Harry Potter and the Sorcerer's Stone</title>
+    <author>J.K. Rowling</author>
+    <price>19.99</price>
+  </book>
+  <book category="Non-Fiction">
+    <title>Science in the 21st Century</title>
+    <author>John Smith</author>
+    <price>29.95</price>
+  </book>
+</bookstore>
